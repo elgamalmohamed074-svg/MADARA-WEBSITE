@@ -1,0 +1,24 @@
+/* 1. إعدادات الصفحة كاملة */
+body {
+    background-color: rgb(77, 78, 2);    /* خلفية سوداء */
+    color: blue;                /* كلام أزرق */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* زخرفة الخط ونوع خط أنيق */
+}
+
+/* 2. تكبير وزخرفة عناصر القائمة li */
+li {
+    font-size: 24px;            /* تكبير الخط */
+    font-weight: bold;          /* جعل الخط عريض */
+    color: red;                 /* جعل القائمة باللون الأحمر لتمييزها */
+    margin-bottom: 10px;        /* ترك مسافة بين الأسطر لراحة العين */
+    list-style-type: "◈ ";      /* زخرفة النقاط بشكل احترافي */
+}
+
+/* 3. زخرفة العناوين */
+h1, h2 {
+    text-shadow: 2px 2px 5px rgba(0, 0, 255, 0.7); /* عمل ظل مضيء للكلام (Neon Effect) */
+    text-decoration: underline; /* وضع خط تحت العنوان */
+}
+div{
+    background-color: #080715;border: 5px#000000 solid;
+}
