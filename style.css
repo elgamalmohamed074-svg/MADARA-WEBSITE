@@ -19,6 +19,4 @@ h1, h2 {
     text-shadow: 2px 2px 5px rgba(0, 0, 255, 0.7); /* عمل ظل مضيء للكلام (Neon Effect) */
     text-decoration: underline; /* وضع خط تحت العنوان */
 }
-div{
-    background-color: #080715;border: 5px#000000 solid;
-}
+
