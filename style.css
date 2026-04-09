@@ -1,22 +1,43 @@
 /* 1. إعدادات الصفحة كاملة */
 body {
-    background-color: rgb(77, 78, 2);    /* خلفية سوداء */
-    color: blue;                /* كلام أزرق */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* زخرفة الخط ونوع خط أنيق */
+    background-color: rgb(77, 78, 2);    
+    color: blue;                
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 15px; /* عشان الكلام ميبقاش لازق في حواف الموبايل */
+    line-height: 1.5;
 }
 
 /* 2. تكبير وزخرفة عناصر القائمة li */
 li {
-    font-size: 24px;            /* تكبير الخط */
-    font-weight: bold;          /* جعل الخط عريض */
-    color: red;                 /* جعل القائمة باللون الأحمر لتمييزها */
-    margin-bottom: 10px;        /* ترك مسافة بين الأسطر لراحة العين */
-    list-style-type: "◈ ";      /* زخرفة النقاط بشكل احترافي */
+    font-size: 1.5rem;   /* حجم مرن (rem) أحسن من البكسل عشان الموبايل */
+    font-weight: bold;          
+    color: red;                 
+    margin-bottom: 12px;        
+    list-style-type: "◈ ";      
 }
 
 /* 3. زخرفة العناوين */
 h1, h2 {
-    text-shadow: 2px 2px 5px rgba(0, 0, 255, 0.7); /* عمل ظل مضيء للكلام (Neon Effect) */
-    text-decoration: underline; /* وضع خط تحت العنوان */
+    text-shadow: 2px 2px 5px rgba(0, 0, 255, 0.7); 
+    text-decoration: underline; 
+    text-align: center; /* توسيط العناوين بيدي شكل احترافي عالفون */
 }
 
+/* 4. الجزء السحري للموبايل (Media Query) */
+@media (max-width: 600px) {
+    li {
+        font-size: 1.1rem; /* تصغير الخط شوية لما تفتح من موبايل */
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+/* 5. ضمان إن الصور متخرجش بره الشاشة */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
